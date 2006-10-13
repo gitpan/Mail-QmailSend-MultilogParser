@@ -3,7 +3,7 @@ package Mail::QmailSend::MultilogParser;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my ($class, %args) = @_;
@@ -77,7 +77,7 @@ Mail::QmailSend::MultilogParser - Parse qmail-send multilog files
   use Mail::QmailSend::MultilogParser;
   use YAML;
 
-  my $parser = Mail::QmailSend::MultilogParser->new(callback => sub { print YAML::Dump(@_)});
+  my $parser = Mail::QmailSend::MultilogParser->new(callback => sub { print YAML::Dump(@_) });
   $parser->parse(\*STDIN);
 
 =head1 DESCRIPTION
@@ -86,7 +86,7 @@ This module parses qmail-send logs in multilog formats.
 
 =head1 AUTHOR
 
-Masahito Yoshida E<lt>masahito@livedoor.jp<gt>
+Masahito Yoshida E<lt>masahito@livedoor.jpE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -96,5 +96,11 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
 at your option, any later version of Perl 5 you may have available.
 
+=cut
+
+=head1 SEE ALSO
+
+L<http://cr.yp.to/qmail.html>
+L<http://cr.yp.to/daemontools/multilog.html>
 
 =cut
