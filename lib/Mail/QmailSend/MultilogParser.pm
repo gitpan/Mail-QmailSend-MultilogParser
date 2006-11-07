@@ -3,7 +3,7 @@ package Mail::QmailSend::MultilogParser;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     my ($class, %args) = @_;
@@ -86,7 +86,7 @@ This module parses qmail-send logs in multilog formats.
 
 =head1 AUTHOR
 
-Masahito Yoshida E<lt>masahito@livedoor.jpE<gt>
+Masahito Yoshida E<lt>masahito@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
